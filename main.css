@@ -1,0 +1,345 @@
+* {
+    box-sizing: border-box; /* This adds the padding and border units in an element's total width and height */
+}
+
+/* Use the root selector to create color swatch variables */
+:root {
+    --black: #121619;
+    --deep_navy: #232738;
+    --light_khaki: #e1d3bb;
+    --pale_grey: #f3f3ef;
+    --error_red: #e65757;
+}
+
+body {
+    margin: 0 auto;
+    font-size: 16px;
+    width: 100%;
+    max-height: 100vh; /* vh unit is relative to 1% of the viewport's height. vw is the same for the viewport's width. This makes the height of the page according to the user's viewport */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--black) !important;
+    background-color: var(--pale_grey) !important;
+}
+
+#resp-wrapper {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 100px 2fr 1fr 100px;
+    grid-template-rows: 100px 790px 40px 1.5fr 0.5fr;
+    gap: 20px;
+    grid-template-areas: 
+        "header header header header"
+        "carousel carousel carousel carousel"
+        ". . banner ."
+        ". section aside ."
+        "footer footer footer footer";
+    }
+
+
+header {
+    grid-area: header;
+    background-color: rgb(255, 255, 255, 50%); /* Utilize RGB value to add alpha channel/opacity control */
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    position: relative;
+    padding: 20px 120px;
+}
+
+#CA-logo {
+    max-width: 112px;
+}
+
+#navbar-items-cont {
+    display: inherit;
+    background-color: rgb(0, 0, 0, 0%);
+    position: absolute;
+    z-index: 2;
+    width: 90%;
+    right: 0;
+    padding-top: 20px;
+}
+
+#navbar-ul {
+    text-align: center;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar-items-cont a, #visiting-drop {
+    text-decoration: none;
+    color: var(--black);
+    font-size: 22px;
+}
+
+/* Use !important to override Bootstrap5's default style settings */
+#visiting-drop {
+    border: none !important;
+}
+
+.dropdown-item:hover {
+    background-color: var(--pale_grey) !important;
+}
+
+.navbar-link:not(:last-child) {
+    display: inline;
+    padding: 0 71px;
+    cursor: pointer;
+    padding-bottom: 10px;
+}
+
+.navbar-link:hover:not(:last-child) {
+    border-bottom: 2px solid var(--black);
+}
+
+#collapse-card {
+    width: 13%;
+    display: inline-block;
+}
+
+#search-bar {
+    height: 34px;
+    border-radius: 3px;
+    border: var(--pale_grey)
+}
+
+#search-submit-btn {
+    background-color: transparent;
+    border: none;
+}
+
+.mag-icon {
+    color: var(--black);
+} 
+
+#carousel-cont {
+    grid-area: carousel;
+    margin: auto;
+    position: absolute;
+    width: 100%;
+}
+
+/* Adjust second image because it has a different height from the first and third images.  */
+.carousel > .carousel-inner > .carousel-item {
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+    height: 910px;
+}        
+
+/* Make the left and right buttons of the carousel container closer to the edges of the viewport. */
+.carousel button{
+    width: 100px;
+}
+
+.carousel button:hover {
+    transition: ease-in-out;
+    transition-duration: 0.1s;
+    background-color: rgba(209, 209, 209, 40%);
+}
+
+/* Change Bootstrap Carousel indicator to dots instead of lines */
+.carousel .carousel-indicators [data-bs-target] {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(255, 255, 255, 50%); 
+    transition-duration: 0.2s;
+    transition-property: background-color;
+}
+
+.carousel .carousel-indicators:hover [data-bs-target] {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+}
+
+.carousel .carousel-indicators .active {
+    background-color: rgb(255, 255, 255, 80%)
+}
+
+/* Overlay banner message over carousel images */
+#banner-welcome-container {
+    grid-area: banner;
+    height: 180px;
+    width: 380px;
+    position: relative;
+    z-index: 1;
+    top: -300px;
+}
+
+#banner-message {
+    font-size: 68px;
+    color: var(--pale_grey);
+    line-height: 56px;
+
+}
+
+main {
+    grid-area: section;
+    border-right: 1px solid var(--black);
+}
+
+main h2 {
+    border-bottom: 1px solid var(--black);
+}
+
+main a {
+    color: var(--black);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+main p {
+    margin: 20px 50px 40px 0;
+}
+
+.pub-date {
+    margin: 0 0 0 20px;
+    font-style: italic;
+}
+
+blockquote {
+    margin: 0;
+}
+
+blockquote p {
+    padding: 15px;
+    background: #FFFFFA;
+    border-radius: 5px
+}
+
+aside {
+    grid-area: aside;
+    margin: 0 0 0 20px
+}
+
+aside ul {
+    list-style: none;
+    margin: 0 0 40px 10px;
+}
+
+aside a {
+    color: var(--black);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+aside a:hover {
+    text-decoration: underline;
+}
+
+aside p {
+    margin-left: 40px;
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--light_khaki);
+    padding: 40px 120px;
+}
+
+#footer-links-container {
+    display: inherit;
+    flex-direction: column;
+}
+
+#footer-links-container a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+#footer-links-container a:hover {
+    color: var(--black);
+    text-decoration: underline;
+}
+
+#footer-address {
+    text-align: right;
+    line-height: 8px;
+}
+
+/* Stylize Bootstrap button component to match the rest of the design */
+#attr-button {
+    background-color: var(--light_khaki);
+    border: none;
+    color: var(--black);
+    padding: 0;
+}
+
+#attr-button:hover {
+    color: var(--pale_grey);
+    text-decoration: underline;
+}
+
+.card { 
+    background-color: var(--pale_grey) !important;
+}
+
+.card a {
+    font-weight: bold;
+}
+
+#contact-us-container {
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+}
+
+#contact-text {
+    width: 30%;
+}
+
+#contact-us-container form {
+    margin-left: 60px;
+    width: 70%;
+    
+}
+
+.contact-input, .email-match {
+    border-radius: 3px;
+    border: 1px solid var(--pale_grey);
+}
+
+#contact-us-container input, textarea {
+    padding-left: 5px;
+}
+
+.input-row {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Style the error message for the form element */
+.input-error {
+    color: var(--error_red);
+    font-style: italic;
+}
+
+#contact-msg {
+    width: 400px;
+    height: 100px;
+    resize: none;
+}
+
+#contact-us-submit {
+    background-color: var(--pale_grey);
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+}
+
+#contact-us-submit:active {
+    background-color: var(--deep_navy);
+    color: var(--pale_grey);
+}

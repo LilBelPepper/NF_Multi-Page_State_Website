@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- This helps display the website properly according to the user's device viewport. -->
+
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/CA_Logo_Bear_32x32.png" alt="Stylized California Bear Icon">
+        <title>California State Website</title>
+
+
+        <!-- Link to Bootstrap5 CSS for the main page -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <!-- Link HTML page to the CSS stylesheet -->
+        <link href="City_San_Jose_Style.css" rel="stylesheet">
+        <!-- Link to Google Fonts magnifying glass icon, right and left chevron icons, and an expand icons. -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+    </head>
+    <div id="resp-wrapper">
+        <body>
+            <header role="banner">
+                <a id="web-logo" href="./main.html">
+                    <img id="CA-logo" src="/images/CA_Logo_Bear.png" alt="Stylized California Bear Icon">
+                </a>
+                <nav role="navigation">
+                    <div id="navbar-items-cont">
+                        <ul id="navbar-ul">
+                            <li class="navbar-link">
+                                <a href="/main.html" aria-current="page">Home</a>
+                            </li>
+                            <li class="navbar-link">
+                                <a href="#">About</a>
+                            </li>
+                            <li class="navbar-link">
+                                <a href="#">State Services</a>
+                            </li>
+                            
+                            <!-- Create dropdown menu to see the city pages -->
+                            <li class="navbar-link dropdown-center">
+                                <button id="visiting-drop" class="btn navbar-link" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Visiting
+                                  </button>
+                                  <ul class="dropdown-menu dropdown-menu-light">
+                                    <li><a class="dropdown-item" href="/City_Sacramento.html">Sacramento</a></li>
+                                    <li><a class="dropdown-item" href="/City_San_Francisco.html">San Francisco</a></li>
+                                    <li><a class="dropdown-item" href="/City_San_Jose.html" aria-current="true">San Jose</a></li>
+                                  </ul>
+                            </li>
+                            <li class="navbar-link">
+                                <a type="button" data-bs-toggle="collapse" data-bs-target="#collapse-search-form" aria-expanded="false" aria-controls="collapseWidthExample">
+                                  Search
+                                </a>
+                            </li>
+                            <li id="collapse-card" class="navbar-link">
+                                <div style="min-height: 50px;">
+                                    <div class="collapse collapse-horizontal" id="collapse-search-form">
+                                        <div style="width: 300px;">
+                                        <form role="search">
+                                            <input id="search-bar" type="search" placeholder="Search" aria-label="Search"> 
+                                            <button type="submit" id="search-submit-btn">
+                                                <span style="vertical-align: top;" class="material-symbols-outlined mag-icon">search</span>
+                                            </button>
+                                        </form>                                    
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <div id="banner-img-cont">
+                <img id="banner-img" src="./images/SJ Skyline at Night.jpg" alt="Photo of San Jose's city skyline at night">
+            </div>
+            <div id="banner-welcome-container"><h1 id="banner-message">San Jose</h1></div>
+
+            <div id="quick-facts-cont">
+                <div id="founded">
+                    <span class="material-symbols-outlined quick-facts-icons">things_to_do</span>
+                    <p>Incorporated:</p>
+                    <h2>March 27, 1850</h2>
+                </div>
+                <div id="population">
+                    <span class="material-symbols-outlined quick-facts-icons">diversity_3</span>
+                    <p>Population of:</p>
+                    <h2>971,233</h2>
+                    <p>as of 2022</p>
+                </div>
+                <div id="classification">
+                    <span class="material-symbols-outlined quick-facts-icons">location_city</span>
+                    <p>Classification:</p>
+                    <h2>Urban City</h2>
+                </div>
+                <div id="region">
+                    <span class="material-symbols-outlined quick-facts-icons">explore</span>
+                    <p>Region:</p>
+                    <h2>Santa Clara Valley</h2>
+                </div>
+            </div>
+
+            <main role="main">    
+                <section>
+                    <h3>Home of the Silicon Valley</h3>
+                    <p>
+                        San Jose, officially the City of San José is the largest city in Northern California by both population and area. With a 2022 population of 971,233, it is the most populous city in both the Bay Area and the San Jose-San Francisco-Oakland Combined Statistical Area—which in 2022 had a population of 7.5 million and 9.0 million respectively—the third-most populous city in California after Los Angeles and San Diego, and the 12th-most populous in the United States. Located in the center of the Santa Clara Valley on the southern shore of San Francisco Bay, San Jose covers an area of 179.97 sq mi (466.1 km2). San Jose is the county seat of Santa Clara County and the main component of the San Jose-Sunnyvale-Santa Clara Metropolitan Statistical Area, with an estimated population of around two million residents in 2018.
+                    </p>
+                    <p>
+                        San Jose is notable for its innovation, cultural diversity, affluence, and sunny and mild Mediterranean climate. Its connection to the booming high tech industry phenomenon known as Silicon Valley prompted Mayor Tom McEnery to adopt the city motto of "Capital of Silicon Valley" in 1988 to promote the city. Major global tech companies including Cisco Systems, eBay, Adobe Inc., PayPal, Broadcom, and Zoom maintain their headquarters in San Jose. San Jose is one of the wealthiest major cities in the world, with the third-highest GDP per capita (after Zürich and Oslo) and the fifth-most expensive housing market. It is home to one of the world's largest overseas Vietnamese populations, a Hispanic community that makes up over 40% of the city's residents, and historic ethnic enclaves such as Japantown and Little Portugal.
+                    </p>
+                    <p>
+                        The large concentration of high-technology engineering, computer, and microprocessor companies around San Jose has led the area to be known as Silicon Valley. Area schools such as the University of California, Berkeley, University of California, Santa Cruz, San Jose State University, San Francisco State University, California State University, East Bay, Santa Clara University, and Stanford University pump thousands of engineering and computer science graduates into the local economy every year.
+                    </p>
+
+                    <h3>Economy and Wealth</h3>
+                    <p>
+                        <figure id="fig-1">
+                            <img class="float-img" src="/images/SJ Adobe_HQ.jpg" alt="Photo of Adobe Headquarters in Downtown San Jose" >
+                            <figcaption>Above: Adobe Headquarters in Downtown San Jose</figcaption>
+                        </figure>                        
+                        San Jose hosts many companies with more than 1,000 employees, including the headquarters of:
+                        <ul>
+                            <li>Adobe</li>
+                            <li>Cisco Systems</li>
+                            <li>eBay</li>
+                            <li>Hitachi</li>
+                            <li>Lee's Sandwiches</li>
+                            <li>Lockheed Martin</li>
+                            <li>Netgear</li>
+                            <li>PayPal</li>
+                            <li>Roku</li>
+                            <li>Western Digital</li>
+                        </ul>
+                    </p>
+                    <p>
+                        With a median home price of $1,085,000 and the highest percentage of million-dollar (or more) homes in the United States, San Jose has the most expensive housing market in the United States and the fifth most expensive housing market in the world.
+                    </p>
+                    <p>
+                        The cost of living in San Jose and the surrounding areas is among the highest in California and the nation, according to 2004 data. Housing costs are the primary reason for the high cost of living, although the costs in all areas tracked by the ACCRA Cost of Living Index are above the national average. Households in the city limits have the highest disposable income of any city in the U.S. with over 500,000 residents.
+                    </p>
+
+                    <p>                    
+
+                        Although the Financial District, Union Square, and Fisherman's Wharf are well known around the world, San Francisco is also characterized by its numerous culturally rich streetscapes featuring mixed-use neighborhoods anchored around central commercial corridors to which residents and visitors alike can walk. Because of these characteristics, San Francisco is ranked the "most walkable" city in the United States by Walkscore.com.Many neighborhoods feature a mix of businesses, restaurants and venues that cater to the daily needs of local residents while also serving many visitors and tourists. Some neighborhoods are dotted with boutiques, cafés and nightlife such as Union Street in Cow Hollow, 24th Street in Noe Valley, Valencia Street in the Mission, Grant Avenue in North Beach, and Irving Street in the Inner Sunset. This approach especially has influenced the continuing South of Market neighborhood redevelopment with businesses and neighborhood services rising alongside high-rise residences.
+                    </p>
+
+                    <table>
+                        <tr>
+                            <th>Income & Poverty</th>
+                            <th>San Jose City</th>
+                            <th>State of California</th>
+                        </tr>
+                        <tr>
+                            <td>Median household income (in 2022 dollars), 2018 - 2022</td>
+                            <td>$136,010</td>
+                            <td>$91,905</td>
+                        </tr>
+                        <tr>
+                            <td>Per capita income in the past 12 months, 2018 - 2022</td>
+                            <td>$59,913</td>
+                            <td>$45,591</td>
+                        </tr>
+                        <tr>
+                            <td>Persons in poverty, percent</td>
+                            <td>7.9%</td>
+                            <td>12.9%</td>
+                        </tr>
+                    </table>
+                    <figcaption>Credits: U.S. Census Bureau</figcaption>
+                </section>
+            </main>
+            <aside>
+                <h3>Related Links</h3>
+                <ul id="related-links-list">
+                    <a href="https://www.sanjoseca.gov/" target="_blank"><li>City of San Jose Website<span id="open-new-win" class="material-symbols-outlined">
+                        open_in_new
+                        </span></a></li></a>
+                    <a href="https://www.mercurynews.com/" target="_blank"><li>San Jose Local News - "Mercury News"<span id="open-new-win" class="material-symbols-outlined">
+                        open_in_new
+                        </span></a></li></a>
+                </ul>
+
+                <h3>Winchester Mystery House</h3>
+                <p>
+                    The Winchester Mystery House is a mansion in San Jose, California, that was once the personal residence of Sarah Winchester, the widow of firearms magnate William Wirt Winchester. The house became a tourist attraction nine months after Winchester's death in 1922. The Victorian and Gothic-style mansion is renowned for its size and its architectural curiosities and for the numerous myths and legends surrounding the structure and its former owner... <a href="https://winchestermysteryhouse.com/" target="_blank">See More</a>
+                </p>
+                
+                <h3>Santana Row</h3>
+                <p>
+                    Santana Row features a vibrant mix of over 50 shops, 30 restaurants, CineArts movie theatre, and the boutique Hotel Valencia.  With your pick of dining options, everything from burgers and Italian to Asian fusion and French, you'll have plenty of choice's to refuel while shopping on The Row's top stores. Plus, catch live music and outdoor yoga classes in the outdoor parks and plazas, and enjoy convenient parking all within walking distance... <a href="https://www.sanjose.org/attraction/santana-row" target="_blank">See More</a>
+                </p>
+            </aside>
+            <footer>
+                <div id="footer-links-container" role="presentation">
+                    <a href="#navbar-items-cont">Back to Top</a>
+                    <a href="#">Accessibility</a>
+                    <a href="#">Conditions of Use</a>
+                    <a href="#">Privacy Policy</a>
+
+                    <!-- Insert Bootstrap 5 component for collapsible menu cards -->
+                    <div id="attr-container">
+                        <p>
+                        <button id="attr-button" class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                            Attribution
+                        </button>
+                        </p>
+                        <div style="min-height: 120px;">
+                        <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                            <div class="card card-body" style="width: 300px;">
+                            Coded by <a id="attribute-link" href="https://www.linkedin.com/in/nicole-fortin-3530b9211" target="_blank">Nicole Javier Belmonte Fortin<span id="open-new-win" class="material-symbols-outlined">
+                                open_in_new
+                                </span></a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Create form element with Javascript input validation -->
+                <div id="contact-us-container">
+                    <div id="contact-text">
+                        <h2>Contact Us</h2>
+                        <p>Can't find the answers you're looking for? Send us a message and we'll get back to you as soon as possible.</p>
+                    </div>
+                    <form id="contact-us">
+                        <div class="input-row">
+                            <div class="input-container">
+                                <input type="text" id="fn-input" class="contact-input" name="fname" placeholder="First Name" required pattern="\w+" aria-label="First Name">
+                                <p class="input-error" id="fname-error"></p>
+                            </div>    
+                            <div class="input-container">
+                                <input type="text" id="ln-input" class="contact-input" name="lname" placeholder="Last Name" required pattern="\w+" aria-label="Last Name">
+                                <p class="input-error" id="lname-error"></p>
+                            </div>
+                        </div>
+                        <div class="input-row">
+                            <div class="input-container">
+                                <input type="email" id="email-input" class="email-match" name="user-email" placeholder="Email Address" required aria-label="Email Address" onblur="emailMatchCheck()">
+                                <p class="input-error" id="email-error"></p>
+                            </div>
+                            <div >
+                                <input type="email" id="email-confirm" class="email-match" name="user-email-confirmation" required placeholder="Confirm Email Address" aria-label="Confirm Email Address" onblur="emailMatchCheck()">
+                                <p class="input-error" id="email-confirm-error"></p>
+                            </div>
+                        </div>    
+                        <div class="input-container">
+                            <textarea id="contact-msg" class="contact-input" name="user-msg" placeholder="Message" required pattern="\w+" aria-label="Type Message Here" rows="4"></textarea>
+                            <p class="input-error" id="msg-error"></p>
+                        </div>
+                        <input id="contact-us-submit" type="submit">
+                    </form>
+                </div>
+                <div id="footer-address">
+                    <p>Government of the State of California</p>
+                    <p>Address Line 1</p>
+                    <p>Address Line 2</p>
+                    <p>City, CA ZIP</p>
+                    <p>Phone: (555) 555-555</p>
+                </div>
+            </footer>
+        </body>
+    </div>
+<!-- Link jQuery script allow custom javascript use over Bootstrap javascript file -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<!-- Link HTML file to the Bootstrap5 javascript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="main.js"></script> <!-- Link HTML file to the javascript at the bottom of the page to make sure the jS loads after reading the entire code.-->
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- This helps display the website properly according to the user's device viewport. -->
+
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/CA_Logo_Bear_32x32.png" alt="Stylized California Bear Icon">
+        <title>California State Website</title>
+
+
+        <!-- Link to Bootstrap5 CSS for the main page -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <!-- Link HTML page to the CSS stylesheet -->
+        <link href="City_San_Francisco_Style.css" rel="stylesheet">
+        <!-- Link to Google Fonts magnifying glass icon, right and left chevron icons, and an expand icons. -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+    </head>
+    <div id="resp-wrapper">
+        <body>
+            <header role="banner">
+                <a id="web-logo" href="./main.html">
+                    <img id="CA-logo" src="/images/CA_Logo_Bear.png" alt="Stylized California Bear Icon">
+                </a>
+                <nav role="navigation">
+                    <div id="navbar-items-cont">
+                        <ul id="navbar-ul">
+                            <li class="navbar-link">
+                                <a href="/main.html" aria-current="page">Home</a>
+                            </li>
+                            <li class="navbar-link">
+                                <a href="#">About</a>
+                            </li>
+                            <li class="navbar-link">
+                                <a href="#">State Services</a>
+                            </li>
+                            <!-- Create dropdown menu to see the city pages -->
+                            <li class="navbar-link dropdown-center">
+                                <button id="visiting-drop" class="btn navbar-link" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Visiting
+                                  </button>
+                                  <ul class="dropdown-menu dropdown-menu-light">
+                                    <li><a class="dropdown-item" href="/City_Sacramento.html">Sacramento</a></li>
+                                    <li><a class="dropdown-item" href="/City_San_Francisco.html" aria-current="true">San Francisco</a></li>
+                                    <li><a class="dropdown-item" href="/City_San_Jose.html">San Jose</a></li>
+                                  </ul>
+                            </li>
+                            <li class="navbar-link">
+                                <a type="button" data-bs-toggle="collapse" data-bs-target="#collapse-search-form" aria-expanded="false" aria-controls="collapseWidthExample">
+                                  Search
+                                </a>
+                            </li>
+                            <li id="collapse-card" class="navbar-link">
+                                <div style="min-height: 50px;">
+                                    <div class="collapse collapse-horizontal" id="collapse-search-form">
+                                        <div style="width: 300px;">
+                                        <form role="search">
+                                            <input id="search-bar" type="search" placeholder="Search" aria-label="Search"> 
+                                            <button type="submit" id="search-submit-btn">
+                                                <span style="vertical-align: top;" class="material-symbols-outlined mag-icon">search</span>
+                                            </button>
+                                        </form>                                    
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <div id="banner-img-cont">
+                <img id="banner-img" src="./images/SF Golden Gate.webp" alt="Photo of San Francisco's Golden Gate Bridge at night">
+            </div>
+            <div id="banner-welcome-container"><h1 id="banner-message">San Francisco</h1></div>
+
+            <div id="quick-facts-cont">
+                <div id="founded">
+                    <span class="material-symbols-outlined quick-facts-icons">things_to_do</span>
+                    <p>Incorporated:</p>
+                    <h2>April 15, 1850</h2>
+                </div>
+                <div id="population">
+                    <span class="material-symbols-outlined quick-facts-icons">diversity_3</span>
+                    <p>Population of:</p>
+                    <h2>808,437</h2>
+                    <p>as of 2022</p>
+                </div>
+                <div id="classification">
+                    <span class="material-symbols-outlined quick-facts-icons">location_city</span>
+                    <p>Classification:</p>
+                    <h2>Urban City</h2>
+                </div>
+                <div id="region">
+                    <span class="material-symbols-outlined quick-facts-icons">explore</span>
+                    <p>Region:</p>
+                    <h2>San Francisco Bay Area</h2>
+                </div>
+            </div>
+
+            <main role="main">    
+                <section>
+                    <h3>Welcome to the Bay Area</h3>
+                    <p>
+                        San Francisco, officially the City and County of San Francisco, is a commercial, financial, and cultural center in Northern California. With a population of 808,437 residents as of 2022, San Francisco is the fourth most populous city in the U.S. state of California. The city covers a land area of 46.9 square miles (121 square kilometers) at the end of the San Francisco Peninsula, making it the second-most densely populated large U.S. city after New York City and the fifth-most densely populated U.S. county, behind only four New York City boroughs. Among the 92 U.S. cities proper with over 250,000 residents, San Francisco is ranked first by per capita income and sixth by aggregate income as of 2022. Colloquial nicknames for San Francisco include <span class="italic">Frisco, San Fran, The City,</span> and <span class="italic">SF</span> (although San Fran is generally not used by locals).
+                    </p>
+                    <p>
+                        San Francisco and the surrounding San Francisco Bay Area are a global center of economic activity and the arts and sciences, spurred by leading universities,high-tech, healthcare, finance, insurance, real estate, and professional services sectors.As of 2020, the metropolitan area, with 6.7 million residents, ranked 5th by GDP ($874 billion) and 2nd by GDP per capita ($131,082) across the OECD countries, ahead of global cities like Paris, London, and Singapore. San Francisco anchors the 13th most populous metropolitan statistical area in the United States with 4.6 million residents, and the fourth-largest by aggregate income and economic output, with a GDP of $729 billion in 2022. The wider San Jose–San Francisco–Oakland Combined Statistical Area is the fifth-most populous, with 9.0 million residents, and the third-largest by economic output, with a GDP of $1.32 trillion in 2022. In the same year, San Francisco proper had a GDP of $252.2 billion, and a GDP per capita of $312,000. San Francisco was ranked fifth in the world and second in the United States on the Global Financial Centres Index as of September 2023. The city is home to numerous companies inside and outside of technology, including Salesforce, Uber, Airbnb, X Corp., Levi's, Gap, Dropbox, and Lyft.
+                    </p>
+
+                    <h3>Tourism and Conventions</h3>
+                    <p>
+                        Tourism is one of San Francisco's most important private-sector industries, accounting for more than one out of seven jobs in the city. The city's frequent portrayal in music, film, and popular culture has made the city and its landmarks recognizable worldwide. In 2016, it attracted the fifth-highest number of foreign tourists of any city in the United States. More than 25 million visitors arrived in San Francisco in 2016, adding US $9.96 billion to the economy. With a large hotel infrastructure and a major convention facility in the Moscone Center, San Francisco is a popular destination for annual conventions and conferences.
+                    </p>
+                    <p>
+                        Some of the most popular tourist attractions in San Francisco, as noted by the Travel Channel, include the Golden Gate Bridge and Alamo Square Park, home to the famous "Painted Ladies." Both of these locations were often used as landscape shots for the hit American television sitcom Full House. There is also Lombard Street, known for its "crookedness" and extensive views. Tourists also visit Pier 39, which offers dining, shopping, entertainment, and views of the bay, sunbathing California sea lions, the Aquarium of the Bay, and the famous Alcatraz Island.
+                    </p>
+                    <p>                    
+                        <figure id="fig-1">
+                            <img class="float-img" src="/images/SF Palace of Fine Arts.jpg" alt="Photo of the Palace of Fine Arts" >
+                            <figcaption>Above: Palace of Fine Arts</figcaption>
+                        </figure>
+                        Although the Financial District, Union Square, and Fisherman's Wharf are well known around the world, San Francisco is also characterized by its numerous culturally rich streetscapes featuring mixed-use neighborhoods anchored around central commercial corridors to which residents and visitors alike can walk. Because of these characteristics, San Francisco is ranked the "most walkable" city in the United States by Walkscore.com.Many neighborhoods feature a mix of businesses, restaurants and venues that cater to the daily needs of local residents while also serving many visitors and tourists. Some neighborhoods are dotted with boutiques, cafés and nightlife such as Union Street in Cow Hollow, 24th Street in Noe Valley, Valencia Street in the Mission, Grant Avenue in North Beach, and Irving Street in the Inner Sunset. This approach especially has influenced the continuing South of Market neighborhood redevelopment with businesses and neighborhood services rising alongside high-rise residences.
+                    </p>
+
+                    <h3>Economy</h3>
+                    <p>
+                        The city has a diversified service economy, with employment spread across a wide range of professional services, including tourism, financial services, and (increasingly) high technology. In 2016, approximately 27% of workers were employed in professional business services; 14% in leisure and hospitality; 13% in government services; 12% in education and health care; 11% in trade, transportation, and utilities; and 8% in financial activities. In 2019, GDP in the five-county San Francisco metropolitan area grew 3.8% in real terms to $592 billion. Additionally, in 2019 the 14-county San Jose–San Francisco–Oakland combined statistical area had a GDP of $1.086 trillion, ranking 3rd among CSAs, and ahead of all but 16 countries. As of 2019, San Francisco County was the 7th highest-income county in the United States (among 3,142), with a per capita personal income of $139,405. Marin County, directly to the north over the Golden Gate Bridge, and San Mateo County, directly to the south on the Peninsula, were the 6th and 9th highest-income counties respectively.
+                    </p>
+                    <p>
+                        Beginning in the 1990s, San Francisco's economy diversified away from finance and tourism towards the growing fields of high tech, biotechnology, and medical research. Technology jobs accounted for just 1 percent of San Francisco's economy in 1990, growing to 4 percent in 2010 and an estimated 8 percent by the end of 2013. San Francisco became a center of Internet start-up companies during the dot-com bubble of the 1990s and the subsequent social media boom of the late 2000s (decade). Since 2010, San Francisco proper has attracted an increasing share of venture capital investments as compared to nearby Silicon Valley, attracting 423 financings worth US$4.58 billion in 2013. In 2004, the city approved a payroll tax exemption for biotechnology companies to foster growth in the Mission Bay neighborhood, site of a second campus and hospital of the University of California, San Francisco (UCSF). Mission Bay hosts the UCSF Medical Center, the California Institute for Regenerative Medicine, California Institute for Quantitative Biosciences, and Gladstone Institutes, as well as more than 40 private-sector life sciences companies.
+                    </p>
+
+                    <table>
+                        <tr>
+                            <th>Income & Poverty</th>
+                            <th>San Francisco City</th>
+                            <th>State of California</th>
+                        </tr>
+                        <tr>
+                            <td>Median household income (in 2022 dollars), 2018 - 2022</td>
+                            <td>$136,689</td>
+                            <td>$91,905</td>
+                        </tr>
+                        <tr>
+                            <td>Per capita income in the past 12 months, 2018 - 2022</td>
+                            <td>$86,186</td>
+                            <td>$45,591</td>
+                        </tr>
+                        <tr>
+                            <td>Persons in poverty, percent</td>
+                            <td>10.5%</td>
+                            <td>12.9%</td>
+                        </tr>
+                    </table>
+                    <figcaption>Credits: U.S. Census Bureau</figcaption>
+                </section>
+            </main>
+
+            <aside>
+                <h3>Related Links</h3>
+                <ul id="related-links-list">
+                    <a href="https://www.sf.gov/" target="_blank"><li>San Francisco Website<span id="open-new-win" class="material-symbols-outlined">
+                        open_in_new
+                        </span></a></li></a>
+                    <a href="https://www.kron4.com/weather-san-francisco/" target="_blank"><li>San Francisco Local Weather<span id="open-new-win" class="material-symbols-outlined">
+                        open_in_new
+                        </span></a></li></a>
+                    <a href="https://www.sfchronicle.com/" target="_blank"><li>San Francisco Local News - "San Francisco Chronicle"<span id="open-new-win" class="material-symbols-outlined">
+                        open_in_new
+                        </span></a></li></a>
+                </ul>
+
+                <h3>Top Attractions</h3>
+                <ol>
+                    <li>Golden Gate Bridge</li>
+                    <li>Pier 39</li>
+                    <li>Golden Gate Park</li>
+                    <li>Ghiradelli Square</li>
+                    <li>The Presidio</li>
+                    <a href="https://www.sftravel.com/article/top-20-attractions-san-francisco" target="_blank">See More</a>
+                </ol>
+            </aside>
+
+            <footer>
+                <div id="footer-links-container" role="presentation">
+                    <a href="#navbar-items-cont">Back to Top</a>
+                    <a href="#">Accessibility</a>
+                    <a href="#">Conditions of Use</a>
+                    <a href="#">Privacy Policy</a>
+
+                    <!-- Insert Bootstrap 5 component for collapsible menu cards -->
+                    <div id="attr-container">
+                        <p>
+                        <button id="attr-button" class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                            Attribution
+                        </button>
+                        </p>
+                        <div style="min-height: 120px;">
+                        <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                            <div class="card card-body" style="width: 300px;">
+                            Coded by <a id="attribute-link" href="https://www.linkedin.com/in/nicole-fortin-3530b9211" target="_blank">Nicole Javier Belmonte Fortin<span id="open-new-win" class="material-symbols-outlined">
+                                open_in_new
+                                </span></a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div id="contact-us-container">
+                    <div id="contact-text">
+                        <h2>Contact Us</h2>
+                        <p>Can't find the answers you're looking for? Send us a message and we'll get back to you as soon as possible.</p>
+                    </div>
+                    <form id="contact-us">
+                        <div class="input-row">
+                            <div class="input-container">
+                                <input type="text" id="fn-input" class="contact-input" name="fname" placeholder="First Name" required pattern="\w+" aria-label="First Name">
+                                <p class="input-error" id="fname-error"></p>
+                            </div>    
+                            <div class="input-container">
+                                <input type="text" id="ln-input" class="contact-input" name="lname" placeholder="Last Name" required pattern="\w+" aria-label="Last Name">
+                                <p class="input-error" id="lname-error"></p>
+                            </div>
+                        </div>
+                        <div class="input-row">
+                            <div class="input-container">
+                                <input type="email" id="email-input" class="email-match" name="user-email" placeholder="Email Address" required aria-label="Email Address" onblur="emailMatchCheck()">
+                                <p class="input-error" id="email-error"></p>
+                            </div>
+                            <div >
+                                <input type="email" id="email-confirm" class="email-match" name="user-email-confirmation" required placeholder="Confirm Email Address" aria-label="Confirm Email Address" onblur="emailMatchCheck()">
+                                <p class="input-error" id="email-confirm-error"></p>
+                            </div>
+                        </div>    
+                        <div class="input-container">
+                            <textarea id="contact-msg" class="contact-input" name="user-msg" placeholder="Message" required pattern="\w+" aria-label="Type Message Here" rows="4"></textarea>
+                            <p class="input-error" id="msg-error"></p>
+                        </div>
+                        <input id="contact-us-submit" type="submit">
+                    </form>
+                </div>
+                <div id="footer-address">
+                    <p>Government of the State of California</p>
+                    <p>Address Line 1</p>
+                    <p>Address Line 2</p>
+                    <p>City, CA ZIP</p>
+                    <p>Phone: (555) 555-555</p>
+                </div>
+            </footer>
+        </body>
+    </div>
+<!-- Link jQuery script allow custom javascript use over Bootstrap javascript file -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<!-- Link HTML file to the Bootstrap5 javascript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="main.js"></script> <!-- Link HTML file to the javascript at the bottom of the page to make sure the jS loads after reading the entire code.-->
+</html>
