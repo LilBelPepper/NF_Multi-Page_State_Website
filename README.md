@@ -104,4 +104,3 @@ I *definitely* need to go back in and refactor some areas. Is it strange I get a
 ## Author
 
 - linkedIn - [Nicole Fortin](https://www.linkedin.com/in/nicole-fortin-3530b9211/)
-- Frontend Mentor - [@LilBelPepper](https://www.frontendmentor.io/profile/LilBelPepper)
