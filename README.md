@@ -53,7 +53,7 @@ Some requirements for this project include:
 
 ### Links
 
-- Live Site URL: [Nicole Fortin_Multi-Page Calidornia State Website](https://lilbelpepper.github.io/NF_Multi-Page_State_Website/)
+- Live Site URL: [Nicole Fortin_Multi-Page California State Website](https://lilbelpepper.github.io/NF_Multi-Page_State_Website/)
 
 
 ## My process
